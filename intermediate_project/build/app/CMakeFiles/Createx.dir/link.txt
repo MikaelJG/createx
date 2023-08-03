@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Createx.dir/main.cc.o  -o Createx  ../src/my_lib/libLibrary.a 

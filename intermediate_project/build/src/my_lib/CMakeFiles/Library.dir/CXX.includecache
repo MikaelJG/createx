@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mjg/code/createx/intermediate_project/src/my_lib/my_lib.cc
+iostream
+-
+my_lib.h
+/home/mjg/code/createx/intermediate_project/src/my_lib/my_lib.h
+
+/home/mjg/code/createx/intermediate_project/src/my_lib/my_lib.h
+
