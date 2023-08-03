@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=CppProjectTemplate
+CMAKE_PROJECT_NAME:STATIC=Createx
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0.0
@@ -229,6 +229,12 @@ CppProjectTemplate_BINARY_DIR:STATIC=/home/mjg/code/createx/intermediate_project
 
 //Value Computed by CMake
 CppProjectTemplate_SOURCE_DIR:STATIC=/home/mjg/code/createx/intermediate_project
+
+//Value Computed by CMake
+Createx_BINARY_DIR:STATIC=/home/mjg/code/createx/intermediate_project/build
+
+//Value Computed by CMake
+Createx_SOURCE_DIR:STATIC=/home/mjg/code/createx/intermediate_project
 
 
 ########################
