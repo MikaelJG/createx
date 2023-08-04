@@ -93,18 +93,39 @@ app/clean: app/CMakeFiles/Createx_executable.dir/clean
 
 # Recursive "all" directory target.
 src/all: src/verification_library/all
+src/all: src/search_library/all
 
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/verification_library/preinstall
+src/preinstall: src/search_library/preinstall
 
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/verification_library/clean
+src/clean: src/search_library/clean
 
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/search_library
+
+# Recursive "all" directory target.
+src/search_library/all: src/search_library/CMakeFiles/Search_Library.dir/all
+
+.PHONY : src/search_library/all
+
+# Recursive "preinstall" directory target.
+src/search_library/preinstall:
+
+.PHONY : src/search_library/preinstall
+
+# Recursive "clean" directory target.
+src/search_library/clean: src/search_library/CMakeFiles/Search_Library.dir/clean
+
+.PHONY : src/search_library/clean
 
 #=============================================================================
 # Directory level rules for directory src/verification_library
@@ -131,7 +152,7 @@ src/verification_library/clean: src/verification_library/CMakeFiles/Verification
 src/verification_library/CMakeFiles/Verification_Library.dir/all:
 	$(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/depend
 	$(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=3,4 "Built target Verification_Library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=5,6 "Built target Verification_Library"
 .PHONY : src/verification_library/CMakeFiles/Verification_Library.dir/all
 
 # Build rule for subdir invocation for target.
@@ -150,6 +171,33 @@ Verification_Library: src/verification_library/CMakeFiles/Verification_Library.d
 src/verification_library/CMakeFiles/Verification_Library.dir/clean:
 	$(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/clean
 .PHONY : src/verification_library/CMakeFiles/Verification_Library.dir/clean
+
+#=============================================================================
+# Target rules for target src/search_library/CMakeFiles/Search_Library.dir
+
+# All Build rule for target.
+src/search_library/CMakeFiles/Search_Library.dir/all:
+	$(MAKE) -f src/search_library/CMakeFiles/Search_Library.dir/build.make src/search_library/CMakeFiles/Search_Library.dir/depend
+	$(MAKE) -f src/search_library/CMakeFiles/Search_Library.dir/build.make src/search_library/CMakeFiles/Search_Library.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=3,4 "Built target Search_Library"
+.PHONY : src/search_library/CMakeFiles/Search_Library.dir/all
+
+# Build rule for subdir invocation for target.
+src/search_library/CMakeFiles/Search_Library.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/search_library/CMakeFiles/Search_Library.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 0
+.PHONY : src/search_library/CMakeFiles/Search_Library.dir/rule
+
+# Convenience name for target.
+Search_Library: src/search_library/CMakeFiles/Search_Library.dir/rule
+
+.PHONY : Search_Library
+
+# clean rule for target.
+src/search_library/CMakeFiles/Search_Library.dir/clean:
+	$(MAKE) -f src/search_library/CMakeFiles/Search_Library.dir/build.make src/search_library/CMakeFiles/Search_Library.dir/clean
+.PHONY : src/search_library/CMakeFiles/Search_Library.dir/clean
 
 #=============================================================================
 # Target rules for target app/CMakeFiles/Createx_executable.dir

@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles /home/mjg/code/createx/cmake_createx/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/mjg/code/createx/cmake_createx/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles /home/mjg/code/createx/cmake_createx/build/src/search_library/CMakeFiles/progress.marks
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/search_library/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/search_library/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,57 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/search_library/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/search_library/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mjg/code/createx/cmake_createx/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Verification_Library
+# Convenience name for target.
+src/search_library/CMakeFiles/Search_Library.dir/rule:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/search_library/CMakeFiles/Search_Library.dir/rule
+.PHONY : src/search_library/CMakeFiles/Search_Library.dir/rule
 
-# Build rule for target.
-Verification_Library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Verification_Library
-.PHONY : Verification_Library
+# Convenience name for target.
+Search_Library: src/search_library/CMakeFiles/Search_Library.dir/rule
 
-# fast build rule for target.
-Verification_Library/fast:
-	$(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/build
-.PHONY : Verification_Library/fast
-
-#=============================================================================
-# Target rules for targets named Search_Library
-
-# Build rule for target.
-Search_Library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Search_Library
 .PHONY : Search_Library
 
 # fast build rule for target.
 Search_Library/fast:
-	$(MAKE) -f src/search_library/CMakeFiles/Search_Library.dir/build.make src/search_library/CMakeFiles/Search_Library.dir/build
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/search_library/CMakeFiles/Search_Library.dir/build.make src/search_library/CMakeFiles/Search_Library.dir/build
 .PHONY : Search_Library/fast
 
-#=============================================================================
-# Target rules for targets named Createx_executable
+search_library.o: search_library.cpp.o
 
-# Build rule for target.
-Createx_executable: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Createx_executable
-.PHONY : Createx_executable
+.PHONY : search_library.o
 
-# fast build rule for target.
-Createx_executable/fast:
-	$(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/build
-.PHONY : Createx_executable/fast
+# target to build an object file
+search_library.cpp.o:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/search_library/CMakeFiles/Search_Library.dir/build.make src/search_library/CMakeFiles/Search_Library.dir/search_library.cpp.o
+.PHONY : search_library.cpp.o
+
+search_library.i: search_library.cpp.i
+
+.PHONY : search_library.i
+
+# target to preprocess a source file
+search_library.cpp.i:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/search_library/CMakeFiles/Search_Library.dir/build.make src/search_library/CMakeFiles/Search_Library.dir/search_library.cpp.i
+.PHONY : search_library.cpp.i
+
+search_library.s: search_library.cpp.s
+
+.PHONY : search_library.s
+
+# target to generate assembly for a file
+search_library.cpp.s:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/search_library/CMakeFiles/Search_Library.dir/build.make src/search_library/CMakeFiles/Search_Library.dir/search_library.cpp.s
+.PHONY : search_library.cpp.s
 
 # Help Target
 help:
@@ -157,9 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Verification_Library"
 	@echo "... Search_Library"
-	@echo "... Createx_executable"
+	@echo "... search_library.o"
+	@echo "... search_library.i"
+	@echo "... search_library.s"
 .PHONY : help
 
 
@@ -171,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mjg/code/createx/cmake_createx/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
