@@ -20,8 +20,8 @@ int main(int argc, char* argv[])
     const fs::path current_dir = fs::current_path();
     const std::string current_dir_string = current_dir.string();
 
-    const std::string wanted_dir = "dir";
-    const std::string wanted_ext = "tex";
+    const std::string wanted_dir = ".test";
+    const std::string wanted_ext = "txt";
 
     std::vector<std::string> files_for_tex_file;
 
