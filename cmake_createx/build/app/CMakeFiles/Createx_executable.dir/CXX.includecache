@@ -6,35 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../src/search_library/search_library.cpp
-filesystem
--
-vector
--
-iostream
--
-
-../src/search_library/search_library.h
-search_library.cpp
-../src/search_library/search_library.cpp
-
-../src/verification_library/verify_arg.h
-vector
--
-
-../src/verification_library/verify_files.h
-
-/home/mjg/code/createx/cmake_createx/app/main.cc
-iostream
--
-vector
--
-filesystem
--
-verify_arg.h
-/home/mjg/code/createx/cmake_createx/app/verify_arg.h
-verify_files.h
-/home/mjg/code/createx/cmake_createx/app/verify_files.h
-search_library.h
-/home/mjg/code/createx/cmake_createx/app/search_library.h
-
