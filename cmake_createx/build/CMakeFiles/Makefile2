@@ -54,39 +54,18 @@ CMAKE_BINARY_DIR = /home/mjg/code/createx/cmake_createx/build
 
 # The main recursive "all" target.
 all: src/all
-all: app/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: src/preinstall
-preinstall: app/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: src/clean
-clean: app/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory app
-
-# Recursive "all" directory target.
-app/all: app/CMakeFiles/Createx_executable.dir/all
-
-.PHONY : app/all
-
-# Recursive "preinstall" directory target.
-app/preinstall:
-
-.PHONY : app/preinstall
-
-# Recursive "clean" directory target.
-app/clean: app/CMakeFiles/Createx_executable.dir/clean
-
-.PHONY : app/clean
 
 #=============================================================================
 # Directory level rules for directory src
@@ -131,7 +110,7 @@ src/verification_library/clean: src/verification_library/CMakeFiles/Verification
 src/verification_library/CMakeFiles/Verification_Library.dir/all:
 	$(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/depend
 	$(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=3,4 "Built target Verification_Library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=1,2 "Built target Verification_Library"
 .PHONY : src/verification_library/CMakeFiles/Verification_Library.dir/all
 
 # Build rule for subdir invocation for target.
@@ -150,33 +129,6 @@ Verification_Library: src/verification_library/CMakeFiles/Verification_Library.d
 src/verification_library/CMakeFiles/Verification_Library.dir/clean:
 	$(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/clean
 .PHONY : src/verification_library/CMakeFiles/Verification_Library.dir/clean
-
-#=============================================================================
-# Target rules for target app/CMakeFiles/Createx_executable.dir
-
-# All Build rule for target.
-app/CMakeFiles/Createx_executable.dir/all: src/verification_library/CMakeFiles/Verification_Library.dir/all
-	$(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/depend
-	$(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=1,2 "Built target Createx_executable"
-.PHONY : app/CMakeFiles/Createx_executable.dir/all
-
-# Build rule for subdir invocation for target.
-app/CMakeFiles/Createx_executable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/Createx_executable.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 0
-.PHONY : app/CMakeFiles/Createx_executable.dir/rule
-
-# Convenience name for target.
-Createx_executable: app/CMakeFiles/Createx_executable.dir/rule
-
-.PHONY : Createx_executable
-
-# clean rule for target.
-app/CMakeFiles/Createx_executable.dir/clean:
-	$(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/clean
-.PHONY : app/CMakeFiles/Createx_executable.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

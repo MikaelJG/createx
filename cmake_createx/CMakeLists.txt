@@ -9,5 +9,15 @@ set(CMAKE_CXX_EXTENSIONS        OFF)
 set(VERIFICATION_LIBRARY Verification_Library) # new name
 set(CREATEX_EXECUTABLE Createx_executable)
 
+# to call option from CLI
+# cmake .. -DOPTION=ON
+
+# second argument is a comment,
+# no impact.
+
+option(COMPILE_EXE "Whether to compile the createx executable or not")
+
 add_subdirectory(src)
-add_subdirectory(app)
+if (COMPILE_EXE)
+    add_subdirectory(app)
+endif()
