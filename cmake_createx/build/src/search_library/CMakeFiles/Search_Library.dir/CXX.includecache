@@ -7,4 +7,10 @@
 #IncludeRegexTransform: 
 
 /home/mjg/code/createx/cmake_createx/src/search_library/search_library.cpp
+filesystem
+-
+vector
+-
+iostream
+-
 

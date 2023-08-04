@@ -11,11 +11,13 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/verification_library/."
+  "../src/search_library/."
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/mjg/code/createx/cmake_createx/build/src/verification_library/CMakeFiles/Verification_Library.dir/DependInfo.cmake"
+  "/home/mjg/code/createx/cmake_createx/build/src/search_library/CMakeFiles/Search_Library.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

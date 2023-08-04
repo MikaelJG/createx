@@ -204,6 +204,7 @@ src/search_library/CMakeFiles/Search_Library.dir/clean:
 
 # All Build rule for target.
 app/CMakeFiles/Createx_executable.dir/all: src/verification_library/CMakeFiles/Verification_Library.dir/all
+app/CMakeFiles/Createx_executable.dir/all: src/search_library/CMakeFiles/Search_Library.dir/all
 	$(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/depend
 	$(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=1,2 "Built target Createx_executable"
@@ -211,7 +212,7 @@ app/CMakeFiles/Createx_executable.dir/all: src/verification_library/CMakeFiles/V
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/Createx_executable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/Createx_executable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/Createx_executable.dir/rule

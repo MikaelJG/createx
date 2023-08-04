@@ -3,6 +3,7 @@
 #include <filesystem>
 
 #include "verification_library.h"
+#include "search_library.h"
 
 namespace fs = std::filesystem;
 

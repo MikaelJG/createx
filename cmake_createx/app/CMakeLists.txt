@@ -1,2 +1,3 @@
 add_executable(Createx_executable main.cc)
 target_link_libraries(Createx_executable PUBLIC Verification_Library)
+target_link_libraries(Createx_executable PUBLIC Search_Library)
