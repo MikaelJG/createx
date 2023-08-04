@@ -136,6 +136,32 @@ Search_Library/fast:
 	$(MAKE) -f src/search_library/CMakeFiles/Search_Library.dir/build.make src/search_library/CMakeFiles/Search_Library.dir/build
 .PHONY : Search_Library/fast
 
+#=============================================================================
+# Target rules for targets named Createx_executable
+
+# Build rule for target.
+Createx_executable: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Createx_executable
+.PHONY : Createx_executable
+
+# fast build rule for target.
+Createx_executable/fast:
+	$(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/build
+.PHONY : Createx_executable/fast
+
+#=============================================================================
+# Target rules for targets named Createx_test
+
+# Build rule for target.
+Createx_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Createx_test
+.PHONY : Createx_test
+
+# fast build rule for target.
+Createx_test/fast:
+	$(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/build
+.PHONY : Createx_test/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -146,6 +172,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... Verification_Library"
 	@echo "... Search_Library"
+	@echo "... Createx_executable"
+	@echo "... Createx_test"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Createx_executable.dir/main.cc.o"
+  "CMakeFiles/Createx_executable.dir/main.cpp.o"
   "Createx_executable"
   "Createx_executable.pdb"
 )

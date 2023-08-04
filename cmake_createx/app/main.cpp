@@ -22,8 +22,10 @@ int main(int argc, char* argv[])
     const fs::path current_dir = fs::current_path();
     const std::string current_dir_string = current_dir.string();
 
-    const std::string wanted_dir = ".test";
-    const std::string wanted_ext = "txt";
+    std::cout << "Argument 1: " << arguments[0] << '\n';
+    std::cout << "Argument 2: " << arguments[1] << '\n';
+    const std::string wanted_dir = arguments[0];
+    const std::string wanted_ext = arguments[1];
 
     std::vector<std::string> files_for_tex_file;
 

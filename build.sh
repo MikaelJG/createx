@@ -14,6 +14,14 @@ case $option in
         cmake_command="cmake .. -DCOMPILE_EXE=ON";;
     lib)
         cmake_command="cmake .. -DCOMPILE_EXE=OFF";;
+    test)
+        cmake_command="cmake .. -DCOMPILE_TEST=ON";;
+    default)
+        cmake_command="cmake .. -DCOMPILE_TEST=ON -DCOMPILE_EX=ON"
+
+        run_command="./test/Createx_test test_dir txt"
+        echo "Test and executable defaulted to ON";;
+
     *)
         echo "Chose Option: app or lib"
         exit;;
@@ -21,3 +29,10 @@ esac
 
 cd "$build_dir" || echo "can't find the build directory"
 $cmake_command && cmake --build .
+
+echo "Build Worked."
+echo "Running Executable"
+sleep 2 
+$run_command
+
+

@@ -57,27 +57,27 @@ include app/CMakeFiles/Createx_executable.dir/progress.make
 # Include the compile flags for this target's objects.
 include app/CMakeFiles/Createx_executable.dir/flags.make
 
-app/CMakeFiles/Createx_executable.dir/main.cc.o: app/CMakeFiles/Createx_executable.dir/flags.make
-app/CMakeFiles/Createx_executable.dir/main.cc.o: ../app/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/CMakeFiles/Createx_executable.dir/main.cc.o"
-	cd /home/mjg/code/createx/cmake_createx/build/app && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Createx_executable.dir/main.cc.o -c /home/mjg/code/createx/cmake_createx/app/main.cc
+app/CMakeFiles/Createx_executable.dir/main.cpp.o: app/CMakeFiles/Createx_executable.dir/flags.make
+app/CMakeFiles/Createx_executable.dir/main.cpp.o: ../app/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/CMakeFiles/Createx_executable.dir/main.cpp.o"
+	cd /home/mjg/code/createx/cmake_createx/build/app && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Createx_executable.dir/main.cpp.o -c /home/mjg/code/createx/cmake_createx/app/main.cpp
 
-app/CMakeFiles/Createx_executable.dir/main.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Createx_executable.dir/main.cc.i"
-	cd /home/mjg/code/createx/cmake_createx/build/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mjg/code/createx/cmake_createx/app/main.cc > CMakeFiles/Createx_executable.dir/main.cc.i
+app/CMakeFiles/Createx_executable.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Createx_executable.dir/main.cpp.i"
+	cd /home/mjg/code/createx/cmake_createx/build/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mjg/code/createx/cmake_createx/app/main.cpp > CMakeFiles/Createx_executable.dir/main.cpp.i
 
-app/CMakeFiles/Createx_executable.dir/main.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Createx_executable.dir/main.cc.s"
-	cd /home/mjg/code/createx/cmake_createx/build/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mjg/code/createx/cmake_createx/app/main.cc -o CMakeFiles/Createx_executable.dir/main.cc.s
+app/CMakeFiles/Createx_executable.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Createx_executable.dir/main.cpp.s"
+	cd /home/mjg/code/createx/cmake_createx/build/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mjg/code/createx/cmake_createx/app/main.cpp -o CMakeFiles/Createx_executable.dir/main.cpp.s
 
 # Object files for target Createx_executable
 Createx_executable_OBJECTS = \
-"CMakeFiles/Createx_executable.dir/main.cc.o"
+"CMakeFiles/Createx_executable.dir/main.cpp.o"
 
 # External object files for target Createx_executable
 Createx_executable_EXTERNAL_OBJECTS =
 
-app/Createx_executable: app/CMakeFiles/Createx_executable.dir/main.cc.o
+app/Createx_executable: app/CMakeFiles/Createx_executable.dir/main.cpp.o
 app/Createx_executable: app/CMakeFiles/Createx_executable.dir/build.make
 app/Createx_executable: src/verification_library/libVerification_Library.a
 app/Createx_executable: src/search_library/libSearch_Library.a

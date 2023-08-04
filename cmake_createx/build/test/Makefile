@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mjg/code/createx/cmake_createx/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles /home/mjg/code/createx/cmake_createx/build/app/CMakeFiles/progress.marks
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 app/all
+	cd /home/mjg/code/createx/cmake_createx/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles /home/mjg/code/createx/cmake_createx/build/test/CMakeFiles/progress.marks
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 app/clean
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,12 +97,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -111,46 +111,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-app/CMakeFiles/Createx_executable.dir/rule:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/Createx_executable.dir/rule
-.PHONY : app/CMakeFiles/Createx_executable.dir/rule
+test/CMakeFiles/Createx_test.dir/rule:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Createx_test.dir/rule
+.PHONY : test/CMakeFiles/Createx_test.dir/rule
 
 # Convenience name for target.
-Createx_executable: app/CMakeFiles/Createx_executable.dir/rule
+Createx_test: test/CMakeFiles/Createx_test.dir/rule
 
-.PHONY : Createx_executable
+.PHONY : Createx_test
 
 # fast build rule for target.
-Createx_executable/fast:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/build
-.PHONY : Createx_executable/fast
+Createx_test/fast:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/build
+.PHONY : Createx_test/fast
 
-main.o: main.cpp.o
+__/app/main.o: __/app/main.cpp.o
 
-.PHONY : main.o
+.PHONY : __/app/main.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/main.cpp.o
-.PHONY : main.cpp.o
+__/app/main.cpp.o:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/__/app/main.cpp.o
+.PHONY : __/app/main.cpp.o
 
-main.i: main.cpp.i
+__/app/main.i: __/app/main.cpp.i
 
-.PHONY : main.i
+.PHONY : __/app/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/main.cpp.i
-.PHONY : main.cpp.i
+__/app/main.cpp.i:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/__/app/main.cpp.i
+.PHONY : __/app/main.cpp.i
 
-main.s: main.cpp.s
+__/app/main.s: __/app/main.cpp.s
 
-.PHONY : main.s
+.PHONY : __/app/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/main.cpp.s
-.PHONY : main.cpp.s
+__/app/main.cpp.s:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/__/app/main.cpp.s
+.PHONY : __/app/main.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Createx_executable"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Createx_test"
+	@echo "... __/app/main.o"
+	@echo "... __/app/main.i"
+	@echo "... __/app/main.s"
 .PHONY : help
 
 
