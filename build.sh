@@ -19,7 +19,7 @@ case $option in
     default)
         cmake_command="cmake .. -DCOMPILE_TEST=ON -DCOMPILE_EX=ON"
 
-        run_command="./test/Createx_test test_dir txt"
+        run_command="./test/Createx_test"
         echo "Test and executable defaulted to ON";;
 
     *)
@@ -33,6 +33,7 @@ $cmake_command && cmake --build .
 echo "Build Worked."
 echo "Running Executable"
 sleep 2 
-$run_command
+
+./test/Createx_test test/test_dir txt
 
 
