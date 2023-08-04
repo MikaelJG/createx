@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mjg/code/createx/cmake_createx/src/verification_library/verification_library.cc
+iostream
+-
+filesystem
+-
+vector
+-
+verification_library.h
+/home/mjg/code/createx/cmake_createx/src/verification_library/verification_library.h
+
+/home/mjg/code/createx/cmake_createx/src/verification_library/verification_library.h
+

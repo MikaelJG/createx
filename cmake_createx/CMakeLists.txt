@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS        OFF)
 
 set(VERIFICATION_LIBRARY Verification_Library) # new name
-# set(rary) # new name
+set(CREATEX_EXECUTABLE Createx_executable)
 
 add_subdirectory(src)
 add_subdirectory(app)

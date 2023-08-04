@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../src/my_lib/my_lib.h
+../src/verification_library/verification_library.h
 
 /home/mjg/code/createx/cmake_createx/app/main.cc
 iostream
@@ -15,6 +15,6 @@ vector
 -
 filesystem
 -
-my_lib.h
-/home/mjg/code/createx/cmake_createx/app/my_lib.h
+verification_library.h
+/home/mjg/code/createx/cmake_createx/app/verification_library.h
 

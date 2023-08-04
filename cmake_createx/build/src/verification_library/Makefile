@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles /home/mjg/code/createx/cmake_createx/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/mjg/code/createx/cmake_createx/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles /home/mjg/code/createx/cmake_createx/build/src/verification_library/CMakeFiles/progress.marks
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/verification_library/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/verification_library/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/verification_library/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/verification_library/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mjg/code/createx/cmake_createx/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Verification_Library
+# Convenience name for target.
+src/verification_library/CMakeFiles/Verification_Library.dir/rule:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/verification_library/CMakeFiles/Verification_Library.dir/rule
+.PHONY : src/verification_library/CMakeFiles/Verification_Library.dir/rule
 
-# Build rule for target.
-Verification_Library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Verification_Library
+# Convenience name for target.
+Verification_Library: src/verification_library/CMakeFiles/Verification_Library.dir/rule
+
 .PHONY : Verification_Library
 
 # fast build rule for target.
 Verification_Library/fast:
-	$(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/build
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/build
 .PHONY : Verification_Library/fast
 
-#=============================================================================
-# Target rules for targets named Createx
+verification_library.o: verification_library.cc.o
 
-# Build rule for target.
-Createx: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Createx
-.PHONY : Createx
+.PHONY : verification_library.o
 
-# fast build rule for target.
-Createx/fast:
-	$(MAKE) -f app/CMakeFiles/Createx.dir/build.make app/CMakeFiles/Createx.dir/build
-.PHONY : Createx/fast
+# target to build an object file
+verification_library.cc.o:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verification_library.cc.o
+.PHONY : verification_library.cc.o
+
+verification_library.i: verification_library.cc.i
+
+.PHONY : verification_library.i
+
+# target to preprocess a source file
+verification_library.cc.i:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verification_library.cc.i
+.PHONY : verification_library.cc.i
+
+verification_library.s: verification_library.cc.s
+
+.PHONY : verification_library.s
+
+# target to generate assembly for a file
+verification_library.cc.s:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verification_library.cc.s
+.PHONY : verification_library.cc.s
 
 # Help Target
 help:
@@ -145,7 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Verification_Library"
-	@echo "... Createx"
+	@echo "... verification_library.o"
+	@echo "... verification_library.i"
+	@echo "... verification_library.s"
 .PHONY : help
 
 
@@ -157,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mjg/code/createx/cmake_createx/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

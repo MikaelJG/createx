@@ -13,7 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
-  "../src/my_lib/CMakeLists.txt"
+  "../src/verification_library/CMakeLists.txt"
   "/usr/share/cmake-3.16/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -45,12 +45,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/my_lib/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/verification_library/CMakeFiles/CMakeDirectoryInformation.cmake"
   "app/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/my_lib/CMakeFiles/Verification_Library.dir/DependInfo.cmake"
+  "src/verification_library/CMakeFiles/Verification_Library.dir/DependInfo.cmake"
   "app/CMakeFiles/Createx.dir/DependInfo.cmake"
   )
