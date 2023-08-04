@@ -4,7 +4,7 @@
 
 namespace fs = std::filesystem;
 
-void recursively_search_files(const std::string& dir, const std::string& wanted_ext, std::vector<std::string> files_for_tex_file)
+void recursively_search_files(const std::string& dir, const std::string& wanted_ext, std::vector<std::string>& files_for_tex_file)
 {
     try {
         for (const auto& entry : fs::directory_iterator(dir)) {

@@ -22,11 +22,10 @@ int main(int argc, char* argv[])
     const fs::path current_dir = fs::current_path();
     const std::string current_dir_string = current_dir.string();
 
-    std::cout << "Argument 1: " << arguments[0] << '\n';
-    std::cout << "Argument 2: " << arguments[1] << '\n';
     const std::string wanted_dir = current_dir_string + "/" + arguments[0];
-    std::cout << "wanted_dir: " << wanted_dir << '\n';
     const std::string wanted_ext = arguments[1];
+
+    std::cout << "wanted_dir: " << wanted_dir << '\n';
     std::cout << "wanted_ext: " << wanted_ext << '\n';
 
     std::vector<std::string> files_for_tex_file;
