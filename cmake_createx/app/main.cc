@@ -2,7 +2,8 @@
 #include <vector>
 #include <filesystem>
 
-#include "verification_library.h"
+#include "verify_arg.h"
+#include "verify_files.h"
 #include "search_library.h"
 
 namespace fs = std::filesystem;

@@ -125,32 +125,59 @@ Verification_Library/fast:
 	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/build
 .PHONY : Verification_Library/fast
 
-verification_library.o: verification_library.cc.o
+verify_arg.o: verify_arg.cpp.o
 
-.PHONY : verification_library.o
+.PHONY : verify_arg.o
 
 # target to build an object file
-verification_library.cc.o:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verification_library.cc.o
-.PHONY : verification_library.cc.o
+verify_arg.cpp.o:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verify_arg.cpp.o
+.PHONY : verify_arg.cpp.o
 
-verification_library.i: verification_library.cc.i
+verify_arg.i: verify_arg.cpp.i
 
-.PHONY : verification_library.i
+.PHONY : verify_arg.i
 
 # target to preprocess a source file
-verification_library.cc.i:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verification_library.cc.i
-.PHONY : verification_library.cc.i
+verify_arg.cpp.i:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verify_arg.cpp.i
+.PHONY : verify_arg.cpp.i
 
-verification_library.s: verification_library.cc.s
+verify_arg.s: verify_arg.cpp.s
 
-.PHONY : verification_library.s
+.PHONY : verify_arg.s
 
 # target to generate assembly for a file
-verification_library.cc.s:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verification_library.cc.s
-.PHONY : verification_library.cc.s
+verify_arg.cpp.s:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verify_arg.cpp.s
+.PHONY : verify_arg.cpp.s
+
+verify_files.o: verify_files.cpp.o
+
+.PHONY : verify_files.o
+
+# target to build an object file
+verify_files.cpp.o:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verify_files.cpp.o
+.PHONY : verify_files.cpp.o
+
+verify_files.i: verify_files.cpp.i
+
+.PHONY : verify_files.i
+
+# target to preprocess a source file
+verify_files.cpp.i:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verify_files.cpp.i
+.PHONY : verify_files.cpp.i
+
+verify_files.s: verify_files.cpp.s
+
+.PHONY : verify_files.s
+
+# target to generate assembly for a file
+verify_files.cpp.s:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verify_files.cpp.s
+.PHONY : verify_files.cpp.s
 
 # Help Target
 help:
@@ -161,9 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Verification_Library"
-	@echo "... verification_library.o"
-	@echo "... verification_library.i"
-	@echo "... verification_library.s"
+	@echo "... verify_arg.o"
+	@echo "... verify_arg.i"
+	@echo "... verify_arg.s"
+	@echo "... verify_files.o"
+	@echo "... verify_files.i"
+	@echo "... verify_files.s"
 .PHONY : help
 
 

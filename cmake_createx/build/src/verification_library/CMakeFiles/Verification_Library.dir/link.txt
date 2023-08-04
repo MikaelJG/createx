@@ -1,2 +1,2 @@
-/usr/bin/ar qc libVerification_Library.a  CMakeFiles/Verification_Library.dir/verification_library.cc.o
+/usr/bin/ar qc libVerification_Library.a  CMakeFiles/Verification_Library.dir/verify_files.cpp.o CMakeFiles/Verification_Library.dir/verify_arg.cpp.o
 /usr/bin/ranlib libVerification_Library.a
