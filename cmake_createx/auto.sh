@@ -13,8 +13,7 @@ case $option in
     lib)
         cmake_command="cmake .. -DCOMPILE_EXE=OFF";;
     *)
-        echo "Invalid option"
-        echo "Exiting program"
+        echo "Chose Option: app or lib"
         exit;;
 esac
 
