@@ -4,9 +4,8 @@
 
 #include "my_lib.h"
 
-// namespace fs = std::filesystem;
+namespace fs = std::filesystem;
 
-std::vector<std::string> files_for_tex_file;
 
 int main(int argc, char* argv[])
 {
@@ -17,14 +16,16 @@ int main(int argc, char* argv[])
     // we do not know given arguments
     verify_arg_quantity(arguments);
 
-    // // wanted directory must be in current directory
-    // const fs::path current_dir = fs::current_path();
-    // const std::string current_dir_string = current_dir.string();
+    // wanted directory must be in current directory
+    const fs::path current_dir = fs::current_path();
+    const std::string current_dir_string = current_dir.string();
 
     const std::string wanted_dir = "dir";
     const std::string wanted_ext = "tex";
 
-    recursively_search_files(wanted_dir, wanted_ext);
+    std::vector<std::string> files_for_tex_file;
+
+    recursively_search_files(wanted_dir, wanted_ext, files_for_tex_file);
 
     verify_file_quantity(files_for_tex_file);
 
