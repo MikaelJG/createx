@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/my_lib/CMakeFiles/Library.dir/rule:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/my_lib/CMakeFiles/Library.dir/rule
-.PHONY : src/my_lib/CMakeFiles/Library.dir/rule
+src/my_lib/CMakeFiles/Verification_Library.dir/rule:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 src/my_lib/CMakeFiles/Verification_Library.dir/rule
+.PHONY : src/my_lib/CMakeFiles/Verification_Library.dir/rule
 
 # Convenience name for target.
-Library: src/my_lib/CMakeFiles/Library.dir/rule
+Verification_Library: src/my_lib/CMakeFiles/Verification_Library.dir/rule
 
-.PHONY : Library
+.PHONY : Verification_Library
 
 # fast build rule for target.
-Library/fast:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/my_lib/CMakeFiles/Library.dir/build.make src/my_lib/CMakeFiles/Library.dir/build
-.PHONY : Library/fast
+Verification_Library/fast:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/my_lib/CMakeFiles/Verification_Library.dir/build.make src/my_lib/CMakeFiles/Verification_Library.dir/build
+.PHONY : Verification_Library/fast
 
 my_lib.o: my_lib.cc.o
 
@@ -131,7 +131,7 @@ my_lib.o: my_lib.cc.o
 
 # target to build an object file
 my_lib.cc.o:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/my_lib/CMakeFiles/Library.dir/build.make src/my_lib/CMakeFiles/Library.dir/my_lib.cc.o
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/my_lib/CMakeFiles/Verification_Library.dir/build.make src/my_lib/CMakeFiles/Verification_Library.dir/my_lib.cc.o
 .PHONY : my_lib.cc.o
 
 my_lib.i: my_lib.cc.i
@@ -140,7 +140,7 @@ my_lib.i: my_lib.cc.i
 
 # target to preprocess a source file
 my_lib.cc.i:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/my_lib/CMakeFiles/Library.dir/build.make src/my_lib/CMakeFiles/Library.dir/my_lib.cc.i
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/my_lib/CMakeFiles/Verification_Library.dir/build.make src/my_lib/CMakeFiles/Verification_Library.dir/my_lib.cc.i
 .PHONY : my_lib.cc.i
 
 my_lib.s: my_lib.cc.s
@@ -149,7 +149,7 @@ my_lib.s: my_lib.cc.s
 
 # target to generate assembly for a file
 my_lib.cc.s:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/my_lib/CMakeFiles/Library.dir/build.make src/my_lib/CMakeFiles/Library.dir/my_lib.cc.s
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/my_lib/CMakeFiles/Verification_Library.dir/build.make src/my_lib/CMakeFiles/Verification_Library.dir/my_lib.cc.s
 .PHONY : my_lib.cc.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Library"
+	@echo "... Verification_Library"
 	@echo "... my_lib.o"
 	@echo "... my_lib.i"
 	@echo "... my_lib.s"

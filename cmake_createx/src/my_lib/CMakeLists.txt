@@ -1,2 +1,2 @@
-add_library(Library STATIC my_lib.cc)
-target_include_directories(Library PUBLIC "./")
+add_library(Verification_Library STATIC my_lib.cc)
+target_include_directories(Verification_Library PUBLIC "./")

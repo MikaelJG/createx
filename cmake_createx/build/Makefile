@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Library
+# Target rules for targets named Verification_Library
 
 # Build rule for target.
-Library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Library
-.PHONY : Library
+Verification_Library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Verification_Library
+.PHONY : Verification_Library
 
 # fast build rule for target.
-Library/fast:
-	$(MAKE) -f src/my_lib/CMakeFiles/Library.dir/build.make src/my_lib/CMakeFiles/Library.dir/build
-.PHONY : Library/fast
+Verification_Library/fast:
+	$(MAKE) -f src/my_lib/CMakeFiles/Verification_Library.dir/build.make src/my_lib/CMakeFiles/Verification_Library.dir/build
+.PHONY : Verification_Library/fast
 
 #=============================================================================
 # Target rules for targets named Createx
@@ -144,7 +144,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Library"
+	@echo "... Verification_Library"
 	@echo "... Createx"
 .PHONY : help
 

@@ -79,7 +79,7 @@ Createx_EXTERNAL_OBJECTS =
 
 app/Createx: app/CMakeFiles/Createx.dir/main.cc.o
 app/Createx: app/CMakeFiles/Createx.dir/build.make
-app/Createx: src/my_lib/libLibrary.a
+app/Createx: src/my_lib/libVerification_Library.a
 app/Createx: app/CMakeFiles/Createx.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Createx"
 	cd /home/mjg/code/createx/cmake_createx/build/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Createx.dir/link.txt --verbose=$(VERBOSE)
