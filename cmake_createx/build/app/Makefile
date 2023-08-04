@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-app/CMakeFiles/Createx.dir/rule:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/Createx.dir/rule
-.PHONY : app/CMakeFiles/Createx.dir/rule
+app/CMakeFiles/Createx_executable.dir/rule:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/Createx_executable.dir/rule
+.PHONY : app/CMakeFiles/Createx_executable.dir/rule
 
 # Convenience name for target.
-Createx: app/CMakeFiles/Createx.dir/rule
+Createx_executable: app/CMakeFiles/Createx_executable.dir/rule
 
-.PHONY : Createx
+.PHONY : Createx_executable
 
 # fast build rule for target.
-Createx/fast:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx.dir/build.make app/CMakeFiles/Createx.dir/build
-.PHONY : Createx/fast
+Createx_executable/fast:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/build
+.PHONY : Createx_executable/fast
 
 main.o: main.cc.o
 
@@ -131,7 +131,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx.dir/build.make app/CMakeFiles/Createx.dir/main.cc.o
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -140,7 +140,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx.dir/build.make app/CMakeFiles/Createx.dir/main.cc.i
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -149,7 +149,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx.dir/build.make app/CMakeFiles/Createx.dir/main.cc.s
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f app/CMakeFiles/Createx_executable.dir/build.make app/CMakeFiles/Createx_executable.dir/main.cc.s
 .PHONY : main.cc.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Createx"
+	@echo "... Createx_executable"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
