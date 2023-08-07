@@ -53,25 +53,52 @@ CMAKE_BINARY_DIR = /home/mjg/code/createx/cmake_createx/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: _deps/catch2-build/all
 all: src/all
+all: external/all
+all: configured/all
 all: app/all
 all: test/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: _deps/catch2-build/preinstall
 preinstall: src/preinstall
+preinstall: external/preinstall
+preinstall: configured/preinstall
 preinstall: app/preinstall
 preinstall: test/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: _deps/catch2-build/clean
 clean: src/clean
+clean: external/clean
+clean: configured/clean
 clean: app/clean
 clean: test/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory _deps/catch2-build
+
+# Recursive "all" directory target.
+_deps/catch2-build/all:
+
+.PHONY : _deps/catch2-build/all
+
+# Recursive "preinstall" directory target.
+_deps/catch2-build/preinstall:
+
+.PHONY : _deps/catch2-build/preinstall
+
+# Recursive "clean" directory target.
+_deps/catch2-build/clean:
+
+.PHONY : _deps/catch2-build/clean
 
 #=============================================================================
 # Directory level rules for directory app
@@ -90,6 +117,42 @@ app/preinstall:
 app/clean: app/CMakeFiles/Createx_executable.dir/clean
 
 .PHONY : app/clean
+
+#=============================================================================
+# Directory level rules for directory configured
+
+# Recursive "all" directory target.
+configured/all:
+
+.PHONY : configured/all
+
+# Recursive "preinstall" directory target.
+configured/preinstall:
+
+.PHONY : configured/preinstall
+
+# Recursive "clean" directory target.
+configured/clean:
+
+.PHONY : configured/clean
+
+#=============================================================================
+# Directory level rules for directory external
+
+# Recursive "all" directory target.
+external/all:
+
+.PHONY : external/all
+
+# Recursive "preinstall" directory target.
+external/preinstall:
+
+.PHONY : external/preinstall
+
+# Recursive "clean" directory target.
+external/clean:
+
+.PHONY : external/clean
 
 #=============================================================================
 # Directory level rules for directory src

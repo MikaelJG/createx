@@ -1,5 +1,7 @@
 /home/mjg/code/createx/cmake_createx/build/CMakeFiles/rebuild_cache.dir
 /home/mjg/code/createx/cmake_createx/build/CMakeFiles/edit_cache.dir
+/home/mjg/code/createx/cmake_createx/build/_deps/catch2-build/CMakeFiles/edit_cache.dir
+/home/mjg/code/createx/cmake_createx/build/_deps/catch2-build/CMakeFiles/rebuild_cache.dir
 /home/mjg/code/createx/cmake_createx/build/src/CMakeFiles/rebuild_cache.dir
 /home/mjg/code/createx/cmake_createx/build/src/CMakeFiles/edit_cache.dir
 /home/mjg/code/createx/cmake_createx/build/src/verification_library/CMakeFiles/rebuild_cache.dir
@@ -11,6 +13,10 @@
 /home/mjg/code/createx/cmake_createx/build/src/append_library/CMakeFiles/edit_cache.dir
 /home/mjg/code/createx/cmake_createx/build/src/append_library/CMakeFiles/rebuild_cache.dir
 /home/mjg/code/createx/cmake_createx/build/src/append_library/CMakeFiles/Append_Library.dir
+/home/mjg/code/createx/cmake_createx/build/external/CMakeFiles/rebuild_cache.dir
+/home/mjg/code/createx/cmake_createx/build/external/CMakeFiles/edit_cache.dir
+/home/mjg/code/createx/cmake_createx/build/configured/CMakeFiles/rebuild_cache.dir
+/home/mjg/code/createx/cmake_createx/build/configured/CMakeFiles/edit_cache.dir
 /home/mjg/code/createx/cmake_createx/build/app/CMakeFiles/rebuild_cache.dir
 /home/mjg/code/createx/cmake_createx/build/app/CMakeFiles/edit_cache.dir
 /home/mjg/code/createx/cmake_createx/build/app/CMakeFiles/Createx_executable.dir
