@@ -23,8 +23,17 @@ void append_tex_file(std::vector<std::string> files_to_append, std::string outpu
             if (input_file.is_open() && output_file.is_open()) {
                 std::string line;
                 while (std::getline(input_file, line)) {
-                    output_file << "\\" << "section{" << filename << "}" << '\n';
+                    const std::string section_header = "section{" + filename + "}";
+                    const std::string verbatim_header = "begin{verbatim}";
+                    const std::string verbatim_footer = "end{verbatim}";
+
+                    output_file << "\\" << section_header << '\n';
+                    output_file << '\n';
+                    output_file << "\\" << verbatim_header << '\n';
+                    output_file << '\n';
                     output_file << line << '\n'; // Append each line to the output file
+                    output_file << '\n';
+                    output_file << "\\" << verbatim_footer << '\n';
                 }
 
                 std::cout << "File: " << f << '\n';
