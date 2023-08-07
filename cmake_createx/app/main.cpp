@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <filesystem>
+#include <fstream>
 
 #include "verify_arg.h"
 #include "verify_files.h" 
@@ -35,7 +36,9 @@ int main(int argc, char* argv[])
 
     verify_file_quantity(files_for_tex_file);
 
-    const fs::path new_tex_path = current_dir_string + "/" + "new_tex/" + "output.tex" ;
+    fs::create_directories(arguments[0] + "/" + "new_tex");
+    std::ofstream output_file(arguments[0] + "/" + "new_tex/output.tex");
+    const fs::path new_tex_path = current_dir_string + "/test/test_dir/" + "new_tex/" + "output.tex" ;
     const std::string new_tex_path_string = new_tex_path.string();
 
     // we don't know if the output file was found
