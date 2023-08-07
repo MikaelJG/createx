@@ -9,6 +9,10 @@
 /home/mjg/code/createx/cmake_createx/src/append_library/append_tex_file.cpp
 iostream
 -
+filesystem
+-
+fstream
+-
 vector
 -
 append_tex_file.h
