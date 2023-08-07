@@ -34,6 +34,7 @@ void append_tex_file(std::vector<std::string> files_to_append, std::string outpu
                     output_file << line << '\n'; // Append each line to the output file
                     output_file << '\n';
                     output_file << "\\" << verbatim_footer << '\n';
+                    output_file << '\n';
                 }
 
                 std::cout << "File: " << f << '\n';

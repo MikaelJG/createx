@@ -1,10 +1,10 @@
 
 ![Logo](https://github.com/MikaelJG/noti/blob/master/assets/.png)
 
-Createx is a CLI tool to create .tex files. It is the fastest book maker for lazy researchers.
+Createx is a CLI tool to create .tex files. It is the fastest book maker for curious readers.
 
-Createx works in harmony with [Textract](https://github.com/createx) and [Noti](https://github.com/noti),
-my note parser/editor CLI tool.
+Createx works in harmony with [Textract](https://github.com/MikaelJG/textract) and [Noti](https://github.com/MikaelJG/noti),
+my CLI note parser/editor.
 
 ## Installation
 
