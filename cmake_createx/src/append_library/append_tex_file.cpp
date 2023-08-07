@@ -12,12 +12,18 @@ void append_tex_file(std::vector<std::string> files_to_append, std::string outpu
         std::cout << "Output is: " << output_path_string << '\n';
 
         for (const auto& f : files_to_append) {
+
+            // Last '/' is filename
+            const size_t tmp = f.find_last_of('/');
+            const std::string filename = f.substr(tmp + 1);
+
             std::ifstream input_file(f);
             std::ofstream output_file(output_path_string, std::ios::app); // Open in append mode
 
             if (input_file.is_open() && output_file.is_open()) {
                 std::string line;
                 while (std::getline(input_file, line)) {
+                    output_file << "\\" << "section{" << filename << "}" << '\n';
                     output_file << line << '\n'; // Append each line to the output file
                 }
 
