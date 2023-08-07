@@ -7,6 +7,7 @@
 #include "verify_files.h" 
 #include "verify_tex_file.h" 
 #include "search_library.h"
+#include "append_tex_file.h"
 
 namespace fs = std::filesystem;
 

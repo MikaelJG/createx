@@ -1,4 +1,4 @@
-# Install script for directory: /home/mjg/code/createx/cmake_createx/src
+# Install script for directory: /home/mjg/code/createx/cmake_createx/src/append_library
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,20 +35,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/mjg/code/createx/cmake_createx/build/src/verification_library/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/mjg/code/createx/cmake_createx/build/src/search_library/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/mjg/code/createx/cmake_createx/build/src/append_library/cmake_install.cmake")
 endif()
 

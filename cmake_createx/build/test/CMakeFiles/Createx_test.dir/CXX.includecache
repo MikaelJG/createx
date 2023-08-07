@@ -45,4 +45,6 @@ verify_tex_file.h
 /home/mjg/code/createx/cmake_createx/app/verify_tex_file.h
 search_library.h
 /home/mjg/code/createx/cmake_createx/app/search_library.h
+append_tex_file.h
+/home/mjg/code/createx/cmake_createx/app/append_tex_file.h
 

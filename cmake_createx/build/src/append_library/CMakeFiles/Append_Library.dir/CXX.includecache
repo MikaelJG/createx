@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mjg/code/createx/cmake_createx/src/append_library/append_tex_file.cpp
+iostream
+-
+vector
+-
+append_tex_file.h
+/home/mjg/code/createx/cmake_createx/src/append_library/append_tex_file.h
+
+/home/mjg/code/createx/cmake_createx/src/append_library/append_tex_file.h
+vector
+-
+

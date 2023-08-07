@@ -8,6 +8,9 @@
 /home/mjg/code/createx/cmake_createx/build/src/search_library/CMakeFiles/rebuild_cache.dir
 /home/mjg/code/createx/cmake_createx/build/src/search_library/CMakeFiles/edit_cache.dir
 /home/mjg/code/createx/cmake_createx/build/src/search_library/CMakeFiles/Search_Library.dir
+/home/mjg/code/createx/cmake_createx/build/src/append_library/CMakeFiles/edit_cache.dir
+/home/mjg/code/createx/cmake_createx/build/src/append_library/CMakeFiles/rebuild_cache.dir
+/home/mjg/code/createx/cmake_createx/build/src/append_library/CMakeFiles/Append_Library.dir
 /home/mjg/code/createx/cmake_createx/build/app/CMakeFiles/rebuild_cache.dir
 /home/mjg/code/createx/cmake_createx/build/app/CMakeFiles/edit_cache.dir
 /home/mjg/code/createx/cmake_createx/build/app/CMakeFiles/Createx_executable.dir

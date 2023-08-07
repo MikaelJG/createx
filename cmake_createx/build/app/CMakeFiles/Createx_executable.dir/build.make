@@ -81,6 +81,7 @@ app/Createx_executable: app/CMakeFiles/Createx_executable.dir/main.cpp.o
 app/Createx_executable: app/CMakeFiles/Createx_executable.dir/build.make
 app/Createx_executable: src/verification_library/libVerification_Library.a
 app/Createx_executable: src/search_library/libSearch_Library.a
+app/Createx_executable: src/append_library/libAppend_Library.a
 app/Createx_executable: app/CMakeFiles/Createx_executable.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Createx_executable"
 	cd /home/mjg/code/createx/cmake_createx/build/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Createx_executable.dir/link.txt --verbose=$(VERBOSE)

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libAppend_Library.a  CMakeFiles/Append_Library.dir/append_tex_file.cpp.o
+/usr/bin/ranlib libAppend_Library.a

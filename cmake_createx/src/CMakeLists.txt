@@ -1,2 +1,3 @@
 add_subdirectory(verification_library)
 add_subdirectory(search_library)
+add_subdirectory(append_library)

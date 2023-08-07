@@ -137,6 +137,19 @@ Search_Library/fast:
 .PHONY : Search_Library/fast
 
 #=============================================================================
+# Target rules for targets named Append_Library
+
+# Build rule for target.
+Append_Library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Append_Library
+.PHONY : Append_Library
+
+# fast build rule for target.
+Append_Library/fast:
+	$(MAKE) -f src/append_library/CMakeFiles/Append_Library.dir/build.make src/append_library/CMakeFiles/Append_Library.dir/build
+.PHONY : Append_Library/fast
+
+#=============================================================================
 # Target rules for targets named Createx_executable
 
 # Build rule for target.
@@ -172,6 +185,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... Verification_Library"
 	@echo "... Search_Library"
+	@echo "... Append_Library"
 	@echo "... Createx_executable"
 	@echo "... Createx_test"
 .PHONY : help
