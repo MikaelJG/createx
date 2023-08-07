@@ -2,10 +2,11 @@
 // #include <filesystem>
 // #include <fstream>
 #include <vector>
+#include "append_tex_file.h"
 
 // namespace fs = std::filesystem;
 
-void append_files_found(std::vector<std::string> files_to_append, std::string output_path_string) {
+void append_tex_file(std::vector<std::string> files_to_append, std::string output_path_string) {
 
     std::cout << "Output is: " << output_path_string << '\n';
 

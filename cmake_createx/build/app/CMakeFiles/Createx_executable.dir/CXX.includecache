@@ -6,15 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../src/append_library/append_tex_file.cpp
-iostream
--
-vector
--
-
 ../src/append_library/append_tex_file.h
-append_tex_file.cpp
-../src/append_library/append_tex_file.cpp
 
 ../src/search_library/search_library.cpp
 filesystem

@@ -1,5 +1,3 @@
 #pragma once
 
-#include "append_tex_file.cpp"
-
-void append_files_found(std::vector<std::string> files_to_append, std::string output_path_string);
+void append_tex_file(std::vector<std::string> files_to_append, std::string output_path_string);

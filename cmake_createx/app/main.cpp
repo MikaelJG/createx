@@ -45,6 +45,10 @@ int main(int argc, char* argv[])
     // we don't know if the output file was found
     verify_tex_file(new_tex_path_string);
 
+    // ready to write the tex file
+    append_tex_file(files_for_tex_file,new_tex_path_string);
+
+
 
 
     return 0;
