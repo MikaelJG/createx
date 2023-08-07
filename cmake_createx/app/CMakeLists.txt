@@ -1,4 +1,4 @@
 add_executable(Createx_executable main.cpp)
+target_link_libraries(Createx_executable PUBLIC Append_Library)
 target_link_libraries(Createx_executable PUBLIC Verification_Library)
 target_link_libraries(Createx_executable PUBLIC Search_Library)
-target_link_libraries(Createx_executable PUBLIC Append_Library)

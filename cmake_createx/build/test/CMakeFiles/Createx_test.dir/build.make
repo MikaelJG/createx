@@ -81,6 +81,7 @@ test/Createx_test: test/CMakeFiles/Createx_test.dir/__/app/main.cpp.o
 test/Createx_test: test/CMakeFiles/Createx_test.dir/build.make
 test/Createx_test: src/verification_library/libVerification_Library.a
 test/Createx_test: src/search_library/libSearch_Library.a
+test/Createx_test: src/append_library/libAppend_Library.a
 test/Createx_test: test/CMakeFiles/Createx_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Createx_test"
 	cd /home/mjg/code/createx/cmake_createx/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Createx_test.dir/link.txt --verbose=$(VERBOSE)

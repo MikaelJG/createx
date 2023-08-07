@@ -303,6 +303,7 @@ app/CMakeFiles/Createx_executable.dir/clean:
 # All Build rule for target.
 test/CMakeFiles/Createx_test.dir/all: src/verification_library/CMakeFiles/Verification_Library.dir/all
 test/CMakeFiles/Createx_test.dir/all: src/search_library/CMakeFiles/Search_Library.dir/all
+test/CMakeFiles/Createx_test.dir/all: src/append_library/CMakeFiles/Append_Library.dir/all
 	$(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/depend
 	$(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=5,6 "Built target Createx_test"
@@ -310,7 +311,7 @@ test/CMakeFiles/Createx_test.dir/all: src/search_library/CMakeFiles/Search_Libra
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/Createx_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Createx_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mjg/code/createx/cmake_createx/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/Createx_test.dir/rule

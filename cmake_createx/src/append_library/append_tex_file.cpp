@@ -2,7 +2,6 @@
 // #include <filesystem>
 // #include <fstream>
 #include <vector>
-#include "append_tex_file.h"
 
 // namespace fs = std::filesystem;
 

@@ -2,3 +2,4 @@ add_executable(Createx_test ${MAIN_SOURCE_FILE})
 
 target_link_libraries(Createx_test PUBLIC Verification_Library)
 target_link_libraries(Createx_test PUBLIC Search_Library)
+target_link_libraries(Createx_test PUBLIC Append_Library)

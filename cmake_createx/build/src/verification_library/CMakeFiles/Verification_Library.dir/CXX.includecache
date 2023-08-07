@@ -20,3 +20,15 @@ verify_arg.h
 vector
 -
 
+/home/mjg/code/createx/cmake_createx/src/verification_library/verify_files.cpp
+iostream
+-
+filesystem
+-
+vector
+-
+verify_files.h
+/home/mjg/code/createx/cmake_createx/src/verification_library/verify_files.h
+
+/home/mjg/code/createx/cmake_createx/src/verification_library/verify_files.h
+
