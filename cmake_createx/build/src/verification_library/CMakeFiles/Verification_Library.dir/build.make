@@ -83,19 +83,34 @@ src/verification_library/CMakeFiles/Verification_Library.dir/verify_arg.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Verification_Library.dir/verify_arg.cpp.s"
 	cd /home/mjg/code/createx/cmake_createx/build/src/verification_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mjg/code/createx/cmake_createx/src/verification_library/verify_arg.cpp -o CMakeFiles/Verification_Library.dir/verify_arg.cpp.s
 
+src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.o: src/verification_library/CMakeFiles/Verification_Library.dir/flags.make
+src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.o: ../src/verification_library/verify_tex_file.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.o"
+	cd /home/mjg/code/createx/cmake_createx/build/src/verification_library && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.o -c /home/mjg/code/createx/cmake_createx/src/verification_library/verify_tex_file.cpp
+
+src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.i"
+	cd /home/mjg/code/createx/cmake_createx/build/src/verification_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mjg/code/createx/cmake_createx/src/verification_library/verify_tex_file.cpp > CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.i
+
+src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.s"
+	cd /home/mjg/code/createx/cmake_createx/build/src/verification_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mjg/code/createx/cmake_createx/src/verification_library/verify_tex_file.cpp -o CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.s
+
 # Object files for target Verification_Library
 Verification_Library_OBJECTS = \
 "CMakeFiles/Verification_Library.dir/verify_files.cpp.o" \
-"CMakeFiles/Verification_Library.dir/verify_arg.cpp.o"
+"CMakeFiles/Verification_Library.dir/verify_arg.cpp.o" \
+"CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.o"
 
 # External object files for target Verification_Library
 Verification_Library_EXTERNAL_OBJECTS =
 
 src/verification_library/libVerification_Library.a: src/verification_library/CMakeFiles/Verification_Library.dir/verify_files.cpp.o
 src/verification_library/libVerification_Library.a: src/verification_library/CMakeFiles/Verification_Library.dir/verify_arg.cpp.o
+src/verification_library/libVerification_Library.a: src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.o
 src/verification_library/libVerification_Library.a: src/verification_library/CMakeFiles/Verification_Library.dir/build.make
 src/verification_library/libVerification_Library.a: src/verification_library/CMakeFiles/Verification_Library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libVerification_Library.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mjg/code/createx/cmake_createx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libVerification_Library.a"
 	cd /home/mjg/code/createx/cmake_createx/build/src/verification_library && $(CMAKE_COMMAND) -P CMakeFiles/Verification_Library.dir/cmake_clean_target.cmake
 	cd /home/mjg/code/createx/cmake_createx/build/src/verification_library && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Verification_Library.dir/link.txt --verbose=$(VERBOSE)
 

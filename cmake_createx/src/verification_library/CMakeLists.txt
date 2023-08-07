@@ -1,10 +1,12 @@
 set(VERIFICATION_LIBRARY_SOURCES
     "verify_files.cpp"
     "verify_arg.cpp"
+    "verify_tex_file.cpp"
     )
 set(VERIFICATION_LIBRARY_HEADERS
     "verify_files.h"
     "verify_arg.h"
+    "verify_tex_file.h"
     )
 set(LIBRARY_INCLUDES
     "./"

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Verification_Library.dir/verify_arg.cpp.o"
   "CMakeFiles/Verification_Library.dir/verify_files.cpp.o"
+  "CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.o"
   "libVerification_Library.a"
   "libVerification_Library.pdb"
 )

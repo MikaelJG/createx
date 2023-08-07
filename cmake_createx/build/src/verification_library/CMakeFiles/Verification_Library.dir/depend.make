@@ -7,3 +7,6 @@ src/verification_library/CMakeFiles/Verification_Library.dir/verify_arg.cpp.o: .
 src/verification_library/CMakeFiles/Verification_Library.dir/verify_files.cpp.o: ../src/verification_library/verify_files.cpp
 src/verification_library/CMakeFiles/Verification_Library.dir/verify_files.cpp.o: ../src/verification_library/verify_files.h
 
+src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.o: ../src/verification_library/verify_tex_file.cpp
+src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.o: ../src/verification_library/verify_tex_file.h
+

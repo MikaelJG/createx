@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/mjg/code/createx/cmake_createx/src/verification_library/verify_files.cpp
+/home/mjg/code/createx/cmake_createx/src/verification_library/verify_tex_file.cpp
 iostream
 -
 filesystem
 -
-vector
--
-verify_files.h
-/home/mjg/code/createx/cmake_createx/src/verification_library/verify_files.h
+verify_tex_file.h
+/home/mjg/code/createx/cmake_createx/src/verification_library/verify_tex_file.h
 
-/home/mjg/code/createx/cmake_createx/src/verification_library/verify_files.h
+/home/mjg/code/createx/cmake_createx/src/verification_library/verify_tex_file.h
+filesystem
+-
 

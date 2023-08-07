@@ -179,6 +179,33 @@ verify_files.cpp.s:
 	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verify_files.cpp.s
 .PHONY : verify_files.cpp.s
 
+verify_tex_file.o: verify_tex_file.cpp.o
+
+.PHONY : verify_tex_file.o
+
+# target to build an object file
+verify_tex_file.cpp.o:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.o
+.PHONY : verify_tex_file.cpp.o
+
+verify_tex_file.i: verify_tex_file.cpp.i
+
+.PHONY : verify_tex_file.i
+
+# target to preprocess a source file
+verify_tex_file.cpp.i:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.i
+.PHONY : verify_tex_file.cpp.i
+
+verify_tex_file.s: verify_tex_file.cpp.s
+
+.PHONY : verify_tex_file.s
+
+# target to generate assembly for a file
+verify_tex_file.cpp.s:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f src/verification_library/CMakeFiles/Verification_Library.dir/build.make src/verification_library/CMakeFiles/Verification_Library.dir/verify_tex_file.cpp.s
+.PHONY : verify_tex_file.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -194,6 +221,9 @@ help:
 	@echo "... verify_files.o"
 	@echo "... verify_files.i"
 	@echo "... verify_files.s"
+	@echo "... verify_tex_file.o"
+	@echo "... verify_tex_file.i"
+	@echo "... verify_tex_file.s"
 .PHONY : help
 
 

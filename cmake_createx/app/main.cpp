@@ -3,7 +3,8 @@
 #include <filesystem>
 
 #include "verify_arg.h"
-#include "verify_files.h"
+#include "verify_files.h" 
+#include "verify_tex_file.h" 
 #include "search_library.h"
 
 namespace fs = std::filesystem;
@@ -33,6 +34,13 @@ int main(int argc, char* argv[])
     recursively_search_files(wanted_dir, wanted_ext, files_for_tex_file);
 
     verify_file_quantity(files_for_tex_file);
+
+    const fs::path new_tex_path = current_dir_string + "/" + "new_tex/" + "output.tex" ;
+    const std::string new_tex_path_string = new_tex_path.string();
+
+    // we don't know if the output file was found
+    verify_tex_file(new_tex_path_string);
+
 
 
     return 0;

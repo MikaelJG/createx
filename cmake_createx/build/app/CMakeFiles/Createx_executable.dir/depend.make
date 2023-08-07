@@ -5,5 +5,6 @@ app/CMakeFiles/Createx_executable.dir/main.cpp.o: ../src/search_library/search_l
 app/CMakeFiles/Createx_executable.dir/main.cpp.o: ../src/search_library/search_library.h
 app/CMakeFiles/Createx_executable.dir/main.cpp.o: ../src/verification_library/verify_arg.h
 app/CMakeFiles/Createx_executable.dir/main.cpp.o: ../src/verification_library/verify_files.h
+app/CMakeFiles/Createx_executable.dir/main.cpp.o: ../src/verification_library/verify_tex_file.h
 app/CMakeFiles/Createx_executable.dir/main.cpp.o: ../app/main.cpp
 

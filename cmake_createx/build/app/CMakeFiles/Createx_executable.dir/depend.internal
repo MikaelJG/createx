@@ -6,4 +6,5 @@ app/CMakeFiles/Createx_executable.dir/main.cpp.o
  ../src/search_library/search_library.h
  ../src/verification_library/verify_arg.h
  ../src/verification_library/verify_files.h
+ ../src/verification_library/verify_tex_file.h
  /home/mjg/code/createx/cmake_createx/app/main.cpp

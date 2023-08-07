@@ -5,5 +5,6 @@ test/CMakeFiles/Createx_test.dir/__/app/main.cpp.o: ../src/search_library/search
 test/CMakeFiles/Createx_test.dir/__/app/main.cpp.o: ../src/search_library/search_library.h
 test/CMakeFiles/Createx_test.dir/__/app/main.cpp.o: ../src/verification_library/verify_arg.h
 test/CMakeFiles/Createx_test.dir/__/app/main.cpp.o: ../src/verification_library/verify_files.h
+test/CMakeFiles/Createx_test.dir/__/app/main.cpp.o: ../src/verification_library/verify_tex_file.h
 test/CMakeFiles/Createx_test.dir/__/app/main.cpp.o: ../app/main.cpp
 

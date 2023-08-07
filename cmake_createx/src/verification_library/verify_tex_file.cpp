@@ -1,6 +1,11 @@
 #include <iostream>
 #include <filesystem>
+
+#include "verify_tex_file.h"
+
 namespace fs = std::filesystem;
+
+
 
 void verify_tex_file(fs::path output_file) {
 
