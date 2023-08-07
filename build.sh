@@ -4,6 +4,15 @@
 tmp=${BASH_SOURCE[0]}
 script_dir=$(dirname "$tmp")
 build_dir="${script_dir}/cmake_createx/build"
+test_dir="${build_dir}/test/test_dir/new_tex"
+
+
+# Previous test still exist
+if rm "${test_dir}/output.tex"; then
+    echo "Output.tex has been deleted"
+else
+    echo "Output.tex could be found"
+fi
 
 option="$1"
 
@@ -36,4 +45,12 @@ sleep 2
 
 ./test/Createx_test test/test_dir txt
 
-
+if cat "${test_dir}/output.tex" >/dev/null 2>&1; then
+    echo ""
+    echo "Test complete."
+    echo "Output file:"
+    echo ""
+    cat "${test_dir}/output.tex"
+else
+    echo "Output could not be read"
+fi

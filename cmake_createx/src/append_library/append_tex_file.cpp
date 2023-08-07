@@ -7,13 +7,11 @@
 namespace fs = std::filesystem;
 
 void append_tex_file(std::vector<std::string> files_to_append, std::string output_path_string) {
-    try {
 
+    try {
         std::cout << "Output is: " << output_path_string << '\n';
 
         for (const auto& f : files_to_append) {
-            std::cout << "f is: " << f << '\n';
-            
             std::ifstream input_file(f);
             std::ofstream output_file(output_path_string, std::ios::app); // Open in append mode
 
@@ -23,9 +21,10 @@ void append_tex_file(std::vector<std::string> files_to_append, std::string outpu
                     output_file << line << '\n'; // Append each line to the output file
                 }
 
-                std::cout << "File contents successfully appended." << std::endl;
+                std::cout << "File: " << f << '\n';
+                std::cout << "Successfully appended." << '\n';
             } else {
-                std::cerr << "Failed to open files." << std::endl;
+                std::cerr << "Failed to open files." << '\n';
             }
 
             input_file.close();
@@ -37,12 +36,12 @@ void append_tex_file(std::vector<std::string> files_to_append, std::string outpu
         for (const char& c : error_message) {
             std::cout << c;
             if (c == ':') {
-                std::cout << '\n'; // Print newline after each space character
+                std::cout << '\n';
             }
         }
         std::cout << '\n';
 
-        // Filesystem crashed when searching wanted dir
+        // Files could not be open by the fstream, I think
         std::cout << "Files could not be appeneded." << '\n';
         std::cout << "Exiting program..." << '\n';
         std::exit(0);
