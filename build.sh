@@ -21,13 +21,18 @@ option="$1"
 echo "Option: $option"
 
 case $option in
+    help|-help|-h|h)
+        echo ""
+        echo "Commands are: app, lib, test and default"
+        echo ""
+        exit;;
     app)
         cmake_command="cmake .. -DCOMPILE_EXE=ON";;
-    lib)
+    lib|-lib)
         cmake_command="cmake .. -DCOMPILE_EXE=OFF";;
-    test)
+    test|-test)
         cmake_command="cmake .. -DCOMPILE_TEST=ON";;
-    default)
+    default|-default)
         cmake_command="cmake .. -DCOMPILE_TEST=ON -DCOMPILE_EX=ON"
 
         run_command="./test/Createx_test"
