@@ -22,4 +22,4 @@
 /home/mjg/code/createx/cmake_createx/build/app/CMakeFiles/Createx_executable.dir
 /home/mjg/code/createx/cmake_createx/build/test/CMakeFiles/rebuild_cache.dir
 /home/mjg/code/createx/cmake_createx/build/test/CMakeFiles/edit_cache.dir
-/home/mjg/code/createx/cmake_createx/build/test/CMakeFiles/Createx_test.dir
+/home/mjg/code/createx/cmake_createx/build/test/CMakeFiles/unit_tests.dir

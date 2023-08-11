@@ -1,5 +1,11 @@
-add_executable(Createx_test ${MAIN_SOURCE_FILE})
+set(TEST_MAIN "unit_tests")
+set(TEST_SOURCES "test_main.cpp")
+set(TEST_INCLUDES "./")
 
-target_link_libraries(Createx_test PUBLIC Verification_Library)
-target_link_libraries(Createx_test PUBLIC Search_Library)
-target_link_libraries(Createx_test PUBLIC Append_Library)
+add_executable(${TEST_MAIN} ${MAIN_SOURCE_FILE})
+
+target_link_libraries(${TEST_MAIN} PUBLIC
+    Verification_Library
+    Search_Library
+    Append_Library
+    Catch2::Catch2)

@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/Createx_test.dir/rule:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/Createx_test.dir/rule
-.PHONY : test/CMakeFiles/Createx_test.dir/rule
+test/CMakeFiles/unit_tests.dir/rule:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/unit_tests.dir/rule
+.PHONY : test/CMakeFiles/unit_tests.dir/rule
 
 # Convenience name for target.
-Createx_test: test/CMakeFiles/Createx_test.dir/rule
+unit_tests: test/CMakeFiles/unit_tests.dir/rule
 
-.PHONY : Createx_test
+.PHONY : unit_tests
 
 # fast build rule for target.
-Createx_test/fast:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/build
-.PHONY : Createx_test/fast
+unit_tests/fast:
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/build
+.PHONY : unit_tests/fast
 
 __/app/main.o: __/app/main.cpp.o
 
@@ -131,7 +131,7 @@ __/app/main.o: __/app/main.cpp.o
 
 # target to build an object file
 __/app/main.cpp.o:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/__/app/main.cpp.o
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/__/app/main.cpp.o
 .PHONY : __/app/main.cpp.o
 
 __/app/main.i: __/app/main.cpp.i
@@ -140,7 +140,7 @@ __/app/main.i: __/app/main.cpp.i
 
 # target to preprocess a source file
 __/app/main.cpp.i:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/__/app/main.cpp.i
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/__/app/main.cpp.i
 .PHONY : __/app/main.cpp.i
 
 __/app/main.s: __/app/main.cpp.s
@@ -149,7 +149,7 @@ __/app/main.s: __/app/main.cpp.s
 
 # target to generate assembly for a file
 __/app/main.cpp.s:
-	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/__/app/main.cpp.s
+	cd /home/mjg/code/createx/cmake_createx/build && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/__/app/main.cpp.s
 .PHONY : __/app/main.cpp.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Createx_test"
+	@echo "... unit_tests"
 	@echo "... __/app/main.o"
 	@echo "... __/app/main.i"
 	@echo "... __/app/main.s"

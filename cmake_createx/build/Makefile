@@ -163,17 +163,17 @@ Createx_executable/fast:
 .PHONY : Createx_executable/fast
 
 #=============================================================================
-# Target rules for targets named Createx_test
+# Target rules for targets named unit_tests
 
 # Build rule for target.
-Createx_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Createx_test
-.PHONY : Createx_test
+unit_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unit_tests
+.PHONY : unit_tests
 
 # fast build rule for target.
-Createx_test/fast:
-	$(MAKE) -f test/CMakeFiles/Createx_test.dir/build.make test/CMakeFiles/Createx_test.dir/build
-.PHONY : Createx_test/fast
+unit_tests/fast:
+	$(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/build
+.PHONY : unit_tests/fast
 
 # Help Target
 help:
@@ -187,7 +187,7 @@ help:
 	@echo "... Search_Library"
 	@echo "... Append_Library"
 	@echo "... Createx_executable"
-	@echo "... Createx_test"
+	@echo "... unit_tests"
 .PHONY : help
 
 

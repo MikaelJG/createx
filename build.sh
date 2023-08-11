@@ -8,10 +8,12 @@ test_dir="${build_dir}/test/test_dir/new_tex"
 
 
 # Previous test still exist
-if rm "${test_dir}/output.tex"; then
+if rm "${test_dir}/output.tex" >/dev/null 2>&1; then
     echo "Output.tex has been deleted"
+    echo "Executing.."
 else
-    echo "Output.tex could be found"
+    echo "Output.tex could not be found"
+    echo "Executing.."
 fi
 
 option="$1"
